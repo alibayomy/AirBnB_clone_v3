@@ -1,4 +1,6 @@
-reate a route `/status` on the object app_views.
+#!/usr/bin/python3
+'''
+create a route `/status` on the object app_views.
 '''
 
 
