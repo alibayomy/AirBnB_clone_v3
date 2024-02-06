@@ -1,4 +1,6 @@
-reate a new view for Review objects - handles all default RESTful API
+#!/usr/bin/python3
+'''
+Create a new view for Review objects - handles all default RESTful API
 '''
 
 # Import necessary modules

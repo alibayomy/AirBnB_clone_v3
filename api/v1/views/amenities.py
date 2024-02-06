@@ -1,4 +1,6 @@
-reates a view for Amenity objects - handles all default RESTful API actions.
+#!/usr/bin/python3
+'''
+Creates a view for Amenity objects - handles all default RESTful API actions.
 '''
 
 # Import necessary modules
