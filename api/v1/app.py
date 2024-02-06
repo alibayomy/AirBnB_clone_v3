@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-'''
-Createw Flask app; and register the blueprint app_views to Flask instance app.
-'''
+''' Create Flask app; and register the blueprint app_views to Flask instance app.'''
 
 from os import getenv
 from flask import Flask, jsonify
@@ -20,18 +18,14 @@ app.url_map.strict_slashes = False
 
 @app.teardown_appcontext
 def teardown_engine(exception):
-    '''
-    Removes the current SQLAlchemy Session object after each request.
-    '''
+    '''Removes the current SQLAlchemy Session object after each request.'''
     storage.close()
 
 
 # Error handlers for expected app behavior:
 @app.errorhandler(404)
 def not_found(error):
-    '''
-    Return errmsg `Not Found`.
-    '''
+    '''Return errmsg `Not Found`.'''
     response = {'error': 'Not found'}
     return jsonify(response), 404
 
